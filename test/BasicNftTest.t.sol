@@ -10,7 +10,7 @@ contract BasicNftTest is Test {
     BasicNft basicNft;
     address public USER = makeAddr("user");
     string public constant SHIBA =
-        "ipfs://QmSByNquRYDrrwu9wngfSxe2e5UeZQewAAGS25djj2GW3d?filename=shiba-inu-metadata.json";
+        "ipfs://bafybeibzgwqnmozdahzfuxrhytb7w5ovb5ncs2sf5slb35gt7u3kqodj2q/?filename=shiba-inu-metadata.json";
 
     function setUp() public {
         deployer = new DeployBasicNft();
