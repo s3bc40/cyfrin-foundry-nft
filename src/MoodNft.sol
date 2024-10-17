@@ -3,7 +3,6 @@ pragma solidity ^0.8.18;
 
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import {Base64} from "@openzeppelin/contracts/utils/Base64.sol";
-import {console} from "forge-std/console.sol";
 
 contract MoodNft is ERC721 {
     /* Errors */
@@ -51,9 +50,9 @@ contract MoodNft is ERC721 {
                 Base64.encode(
                     bytes(
                         abi.encodePacked(
-                            '{"name: "',
+                            '{"name": "',
                             name(),
-                            '", description: "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": ',
+                            '", "description": "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": "',
                             imageURI,
                             '"}'
                         )
